@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - Elite Hotels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/pages/dashboard.css" rel="stylesheet"> 
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css' />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.print.css'/>
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html"><img src="img/Header/logofullhitam.png" class="img-circle" style="width: 110px; height:53px;"></a>
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                  <li class="dropdown" style="margin-top: 20px;"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                    class="icon-cog"></i> Account <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="javascript:;">Settings</a></li>
+                      <li><a href="javascript:;">Help</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown" style="margin-top: 20px;"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Mirza Sholihul <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="javascript:;">Profile</a></li>
+                      <li><a href="login.html">Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-search pull-right">
+                  <input type="text" class="search-query" placeholder="Search">
+                </form>
+            </div><!--/.nav-collapse --> 
+        </div><!-- /container --> 
+    </div><!-- /navbar-inner --> 
+</div><!-- /navbar -->
+
+
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+        <li class="active"><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+        <li><a href="controlPanel.html"><i class="icon-th"></i><span>Control Panel</span> </a> </li>
+        <li><a href="reportFolder.html"><i class="icon-book"></i><span>Report Folder</span> </a> </li>
+        <li><a href="#"><i class="icon-plus"></i><span>Extra Item Transaction</span> </a> </li>
+      </ul>
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /subnavbar-inner --> 
+</div>
+<!-- /subnavbar -->
+<div class="main">
+    <div class="main-inner">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="widget">
+                        <div class="widget-header"> <i class="icon-bookmark"></i>
+                          <h3>Important Shortcuts</h3>
+                        </div>
+                        <!-- /widget-header -->
+                        <div class="widget-content">
+                            <div class="shortcuts">
+                                <a href="reservation.html" class="shortcut"><i class="shortcut-icon icon-briefcase"></i><span class="shortcut-label">Reservation/Booking</span> </a>
+                                <a href="booking.html" class="shortcut"><i class="shortcut-icon icon-circle-arrow-left"></i><span class="shortcut-label">Check Out</span> </a>
+                                <a href="booking.html" class="shortcut"><i class="shortcut-icon icon-circle-arrow-right"></i><span class="shortcut-label">Check In</span> </a>
+                                <a href="service.html" class="shortcut"><i class="shortcut-icon icon-wrench"></i> <span class="shortcut-label">Service</span> </a>
+                                <a href="payment.html" class="shortcut"><i class="shortcut-icon icon-money"></i> <span class="shortcut-label">Payment</span> </a>
+                                <a href="report.html" class="shortcut"> <i class="shortcut-icon icon-book"></i><span class="shortcut-label">Report</span> </a>
+                            </div><!-- /shortcuts --> 
+                        </div><!-- /widget --> 
+                    </div>
+                </div>
+                <div class="span12">
+                    <!-- /widget -->
+                    <div class="widget widget-nopad">
+                        <div class="widget-header"> <i class="icon-list-alt"></i>
+                            <h3> Standard Class</h3>
+                        </div>
+                        <!-- /widget-header -->
+                        <div class="widget-content">
+                            <div id="calendar">
+                            </div>
+                        </div>
+                        <!-- /widget-content --> 
+                    </div>
+                    <div class="widget widget-nopad">
+                        <div class="widget-header"> <i class="icon-list-alt"></i>
+                            <h3> Deluxe Class</h3>
+                        </div>
+                        <!-- /widget-header -->
+                        <div class="widget-content">
+                            <div id='calendar1'>
+                            </div>
+                        </div>
+                        <!-- /widget-content --> 
+                    </div>
+
+                    <div class="widget widget-nopad">
+                        <div class="widget-header"> <i class="icon-list-alt"></i>
+                            <h3> Executive Class</h3>
+                        </div>
+                        <!-- /widget-header -->
+                        <div class="widget-content">
+                            <div id='calendar2'>
+                            </div>
+                        </div>
+                        <!-- /widget-content --> 
+                    </div>
+                </div><!-- /span12 --> 
+            </div><!-- /row --> 
+        </div><!-- /container --> 
+    </div><!-- /main-inner --> 
+</div><!-- /main -->
+
+
+<div class="extra">
+    <div class="extra-inner">
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <a class="brand" href="index.html"><img src="img/Footer/logofullmaincolor.png" class="img-circle" style="width: 110px; height:53px; margin-bottom:15px;">
+                    </a>
+                    <ul>
+                        <li><a href="javascript:;">Address : Abdul Manaf, St.. , Tembilahan </a></li>
+                        <li><a href="javascript:;">Email : elitehotels@outlook.com</a></li>
+                        <li><a href="javascript:;">Phone : +62-813-0986-3462</a></li>
+                    </ul>
+                </div><!-- /span3 -->
+                <div class="span3">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                        <li><a href="javascript:;">Ask a Question</a></li>
+                        <li><a href="javascript:;">Video Tutorial</a></li>
+                        <li><a href="javascript:;">Feedback</a></li>
+                    </ul>
+                </div><!-- /span3 -->
+                <div class="span3">
+                    <h3>Something Legal</h3>
+                    <ul>
+                        <li><a href="javascript:;">Read License</a></li>
+                        <li><a href="javascript:;">Terms of Use</a></li>
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                    </ul>
+                </div><!-- /span3 -->
+                <div class="span3">
+                    <h3>Our Service</h3>
+                    <ul>
+                        <li><a href="">Meeting Room</a></li>
+                        <li><a href="">Guest House</a></li>
+                        <li><a href="">Restaurant</a></li>
+                        <li><a href="">Laundry</a></li>
+                        <li><a href="">Technology Support</a></li>
+                        <li><a href="">Internet Access</a></li>
+                    </ul>
+                </div><!-- /span3 -->
+            </div><!-- /row --> 
+        </div><!-- /container --> 
+    </div><!-- /extra-inner --> 
+</div><!-- /extra -->
+
+
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <center>
+            <a href="index.html">&copy;Elite Hotels Management</a>
+          </center>
+        </div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+<!-- /footer --> 
+<!-- Le javascript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/full-calendar/lib/jquery.min.js"></script> 
+<script src="js/excanvas.min.js"></script> 
+<script src="js/chart.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.js"></script>
+<script src='js/full-calendar/fullcalendar.min.js'></script>
+<script src="js/base.js"></script> 
+<script src="js/full-calendar/lib/moment.min.js"></script>
+<script src="js/full-calendar/fullcalendar.js"></script>
+<script>
+
+  $('#calendar').fullCalendar({
+    weekends: false // will hide Saturdays and Sundays
+  });
+
+  $('#calendar1').fullCalendar({
+    weekends: false // will hide Saturdays and Sundays
+  });
+
+  $('#calendar2').fullCalendar({
+    weekends: false // will hide Saturdays and Sundays
+  });
+
+</script>
+
+</body>
+</html>

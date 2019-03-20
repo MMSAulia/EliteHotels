@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Hoyse Keeping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href='fullcalendar/fullcalendar.css' rel='stylesheet'>
+    <link href="css/pages/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+	    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+	    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html"><img src="img/Header/logofullhitam.png" class="img-circle" style="width: 110px; height:53px;"></a>
+		    <div class="nav-collapse">
+		        <ul class="nav pull-right">
+			        <li class="dropdown" style="margin-top: 20px;">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i> Account <b class="caret"></b>
+			        	</a>
+			            <ul class="dropdown-menu">
+			              <li><a href="javascript:;">Settings</a></li>
+			              <li><a href="javascript:;">Help</a></li>
+			            </ul>
+			        </li>
+			        <li class="dropdown" style="margin-top: 20px;">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Andi <b class="caret"></b>
+			        	</a>
+			            <ul class="dropdown-menu">
+			              <li><a href="javascript:;">Profile</a></li>
+			              <li><a href="login.html">Logout</a></li>
+			            </ul>
+			        </li>
+		        </ul>
+		        <form class="navbar-search pull-right">
+		          <input type="text" class="search-query" placeholder="Search">
+		        </form>
+		    </div><!--/.nav-collapse --> 
+	    </div><!-- /container --> 
+    </div><!-- /navbar-inner --> 
+</div><!-- /navbar -->
+    
+<div class="subnavbar">
+	<div class="subnavbar-inner">
+		<div class="container">
+			<ul class="mainnav">
+				<li><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+				<li><a href="reservation.html"><i class="icon-briefcase"></i><span>Reservation</span> </a> </li>
+				<li><a href="controlPanel.html"><i class="icon-th"></i><span>Control Panel</span> </a> </li>
+				<li><a href="reportFolder.html"><i class="icon-book"></i><span>Report Folder</span> </a> </li>
+		        <li class="active"><a href="#"><i class="icon-trash"></i><span>House Keeping</span> </a> </li>
+			</ul>
+		</div> <!-- /container -->
+	</div> <!-- /subnavbar-inner -->
+</div> <!-- /subnavbar -->
+    
+    
+
+<div class="main">
+	<div class="main-inner">
+	    <div class="container">
+	        <div class="row">
+		      	<div class="span12">
+		      		<div class="widget">
+		      			<div class="widget-header">
+		      				<i class="icon-book"></i>
+		      				<h3>House Keeping Checked</h3>
+		  				</div> <!-- /widget-header -->
+						
+						<div class="widget-content">
+							<!-- Start tab House Keeping -->
+							<div class="tab-pane active" id="formHouseKeeping">
+								
+								<div class="form-actions">
+									<button class="btn btn-small btn-inverse pull-right" style="margin-left:5px;" type="submit"><i class="icon-print" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Print</span>
+									</button>
+									<h3>House Keeping Report</h3>
+									<br>
+									<table class="table table-striped">
+							            <thead class="tableHead" style="border-top:solid 2px #000; border-bottom:solid 2px #000;">
+							                <tr>
+								                <th>Room Number</th>
+								                <th>Additional Notes</th>
+								                <th>Status</th>
+							                </tr>
+							            </thead>
+						                <tbody>
+							                <tr>
+							                    <td>Room 2</td>
+							                    <td>
+							                    	<input name="addNotes" class="span4" type="text" placeholder="Add NOtes">
+							                    </td>
+							                    <td>
+							                    	<button class="btn btn-small btn-primary pull-right" style="margin-left:5px;" type="submit"><i class="icon-build" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Cleaned</span>
+													</button>
+													<button class="btn btn-small btn-inverse pull-right" style="margin-left:5px;" type="submit"><i class="icon-th" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Cleaning</span>
+													</button>
+													<button class="btn btn-small btn-info pull-right" style="margin-left:5px;" type="submit"><i class="icon-plus" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Clean Up</span>
+													</button>
+													<button class="btn btn-small btn-success pull-right" style="margin-left:5px;" type="submit"><i class="icon-edit" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Dirty</span>
+													</button>
+							                    </td>
+							                </tr>
+						                </tbody>
+							        </table>
+							        <div class="btn-group pull-right">
+										<button class="btn"><i class="icon-chevron-left" style="color: #000;"></i></button>
+										<button class="btn">1</button>
+										<button class="btn">2</button>
+										<button class="btn">3</button>
+										<button class="btn">4</button>
+										<button class="btn">5</button>
+										<button class="btn"><i class="icon-chevron-right" style="color: #000;"></i></button>
+									</div>
+							    </div><!-- End form-action -->
+								<!-- End table House Keeping -->
+						    </div><!-- End formHouseKeeping -->
+						    <!-- End Tab House Keeping -->
+						</div><!-- /widget-content -->	 	
+					</div> <!-- /widget -->
+			    </div> <!-- /span12 -->	
+		    </div> <!-- /row -->
+		</div> <!-- /container -->  
+	</div> <!-- /main-inner -->
+</div> <!-- /main -->
+   
+<div class="extra">
+    <div class="extra-inner">
+	    <div class="container">
+	        <div class="row">
+                <div class="span3">
+                    <a class="brand" href="index.html"><img src="img/Footer/logofullmaincolor.png" class="img-circle" style="width: 110px; height:53px; margin-bottom:15px;">
+                    </a>
+                    <ul>
+                        <li><a href="javascript:;">Address : Abdul Manaf, St.. , Tembilahan </a></li>
+                        <li><a href="javascript:;">Email : elitehotels@outlook.com</a></li>
+                        <li><a href="javascript:;">Phone : +62-813-0986-3462</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+                <div class="span3">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                        <li><a href="javascript:;">Ask a Question</a></li>
+                        <li><a href="javascript:;">Video Tutorial</a></li>
+                        <li><a href="javascript:;">Feedback</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+                <div class="span3">
+                    <h3>Something Legal</h3>
+                    <ul>
+                        <li><a href="javascript:;">Read License</a></li>
+                        <li><a href="javascript:;">Terms of Use</a></li>
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+                <div class="span3">
+                    <h3>Our Service</h3>
+                    <ul>
+                        <li><a href="">Meeting Room</a></li>
+                        <li><a href="">Guest House</a></li>
+                        <li><a href="">Restaurant</a></li>
+                        <li><a href="">Laundry</a></li>
+                        <li><a href="">Technology Support</a></li>
+                        <li><a href="">Internet Access</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+            </div>
+	        <!-- /row --> 
+	    </div>
+        <!-- /container --> 
+    </div>
+    <!-- /extra-inner --> 
+</div>
+<!-- /extra -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <center>
+            <a href="index.html">&copy;Elite Hotels Management</a>
+          </center>
+        </div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+<!-- /footer --> 
+    
+
+
+<script src="js/jquery-1.7.2.min.js"></script>
+	
+<script src="js/bootstrap.js"></script>
+<script src="js/base.js"></script>
+<script src="tests/bootstrap-datepicker.js"></script>
+<script src='js/fullcalendar/lib/jquery.min.js'></script>
+<script src='js/fullcalendar/lib/moment.min.js'></script>
+<script src='js/fullcalendar/fullcalendar.js'></script>
+<script>
+	var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+ 
+var checkin = $('#dpd1').datepicker({
+  onRender: function(date) {
+    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > checkout.date.valueOf()) {
+    var newDate = new Date(ev.date)
+    newDate.setDate(newDate.getDate() + 1);
+    checkout.setValue(newDate);
+  }
+  checkin.hide();
+  $('#dpd2')[0].focus();
+}).data('datepicker');
+var checkout = $('#dpd2').datepicker({
+  onRender: function(date) {
+    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  checkout.hide();
+}).data('datepicker');
+</script>
+
+
+  </body>
+
+</html>

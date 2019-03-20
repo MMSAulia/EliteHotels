@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Invoice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/pages/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="container">
+            <a class="brand pull-left" href="index.html">
+              <img src="img/Footer/logofullmaincolor.png" class="img-circle" style="width: 110px; height:53px; margin-bottom:15px;">
+            </a>
+          </div>
+          <span id="companyAddress pull-left">Rasuna Said Street</span>
+          <br>
+          <span id="companyPostalCode pull-left">Riau 29209</span>
+          <br>
+          <span id="companyCountry pull-left">Indonesia</span>
+        </div>
+        <div class="span6">
+          <span id="guestPhone" style="float:right">Phone : +1-0978-0979</span>
+          <br>
+          <span id="guestEmail" style="float:right">E-mail : guest@gmail.com</span>
+        </div>
+      </div>
+      <hr id="headerLine">
+
+      <div class="row-fluid">
+        <div class="span6">
+          <h4 id="taxInvoice pull-left">Tax Invoice</h4>
+        </div>
+        <div class="span6">
+          <h5 id="invoiceNumber" style="float:right">Invoice Number : 6895</h5>
+          <br>
+          <span id="invoiceDate" style="float:right">Invoice Date : 15 Maret 2018</span>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span12">
+          <h4 id="guestDetail pull-left">Guest Detail</h4>
+          <br>
+          <span id="guestName pull-left">Mirza Sholihul</span>
+          <br>
+          <span id="guestAddress pull-left">Sukabirus Street</span>
+          <br>
+          <span id="guestPostalCode pull-left">20456</span>
+          <br>
+          <span id="guestCountry pull-left">Indonesia</span>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <h4 id="reservationDetail pull-left">Reservation Detail</h4>
+          <br>
+          <span id="reservationNumber pull-left">Reservation Number : LH 1289 78 90776</span>
+          <br>
+          <span id="reservationStatus pull-left">Reservation Status : Checked-In</span>
+          <br>
+          <div class="row-fluid">
+              <div class="span4">
+                  <span id="guestArrival pull-left">Arrival : 11 Maret 2018</span>
+                  <br>
+                  <span id="guestDeparture pull-left">Departure : 15 Maret 2018</span>
+              </div>
+              <div class="span2">
+                  <span id="guestAdult pull-left">Adult : 2</span>
+                  <br>
+                  <span id="guestChildren pull-left">Children : 0</span>
+              </div>
+              <div class="span2">
+                  <span id="guestInfant pull-left">Infant : 0</span>
+                  <br>
+                  <span id="guestNight pull-left">Night : 1</span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <table class="table table-striped" >
+        <thead class="tableHead" style="border-top:solid 2px #000; border-bottom:solid 2px #000;">
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Room Number</th>
+            <th>Quantity</th>
+            <th>Item Total</th>
+            <th>Total</th>
+            <th>Payment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>15 maret 2018</td>
+            <td>Standard Rate</td>
+            <td>Room 2</td>
+            <td></td>
+            <td>Rp.400.000</td>
+            <td>Rp.400.000</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>15 maret 2018</td>
+            <td>Deposite : Cash</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Rp.100.000</td>
+          </tr>
+          <tr id="totalTable" style="border-top:solid 2px #000; border-bottom:solid 2px #000;">
+            <td><b>Total</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>Rp.400.000</b></td>
+            <td><b>Rp.100.000</b></td>
+          </tr>
+          <tr>
+            <td><b>Outstanding Balance</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>Rp.300.000</b></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="row-fluid">
+        <div class="span12">
+          <h4 id="paymentPolicy pull-left">Payment Policy :</h4>
+          <br>
+          <span id="updatePaymentPolicy pull-left">Please Update Payment Policy</span>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Control Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href='fullcalendar/fullcalendar.css' rel='stylesheet'>
+    <link href="css/pages/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+	    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+	    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html"><img src="img/Header/logofullhitam.png" class="img-circle" style="width: 110px; height:53px;"></a>
+		    <div class="nav-collapse">
+		        <ul class="nav pull-right">
+			        <li class="dropdown" style="margin-top: 20px;">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i> Account <b class="caret"></b>
+			        	</a>
+			            <ul class="dropdown-menu">
+			              <li><a href="javascript:;">Settings</a></li>
+			              <li><a href="javascript:;">Help</a></li>
+			            </ul>
+			        </li>
+			        <li class="dropdown" style="margin-top: 20px;">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Andi <b class="caret"></b>
+			        	</a>
+			            <ul class="dropdown-menu">
+			              <li><a href="javascript:;">Profile</a></li>
+			              <li><a href="login.html">Logout</a></li>
+			            </ul>
+			        </li>
+		        </ul>
+		        <form class="navbar-search pull-right">
+		          <input type="text" class="search-query" placeholder="Search">
+		        </form>
+		    </div><!--/.nav-collapse --> 
+	    </div><!-- /container --> 
+    </div><!-- /navbar-inner --> 
+</div><!-- /navbar -->
+    
+<div class="subnavbar">
+	<div class="subnavbar-inner">
+		<div class="container">
+			<ul class="mainnav">
+				<li><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+				<li><a href="reservation.html"><i class="icon-briefcase"></i><span>Reservation</span> </a> </li>
+		        <li class="active"><a href="#"><i class="icon-th"></i><span>Control Panel</span> </a> </li>
+			</ul>
+		</div> <!-- /container -->
+	</div> <!-- /subnavbar-inner -->
+</div> <!-- /subnavbar -->
+    
+    
+
+<div class="main">
+	<div class="main-inner">
+	    <div class="container">
+	        <div class="row">
+		      	<div class="span12">
+		      		<div class="widget">
+		      			<div class="widget-header">
+		      				<i class="icon-book"></i>
+		      				<h3>Control Panel</h3>
+		  				</div> <!-- /widget-header -->
+						
+						<div class="widget-content">
+
+							<div class="row-fluid">
+
+								<div class="span12">
+
+									<div class="tabbable">
+										<ul class="nav nav-tabs">
+										  <li class="active">
+										    <a href="#formCustomer" data-toggle="tab">Customer</a>
+										  </li>
+										  <li class="">
+										    <a href="#formRoom" data-toggle="tab">Room</a>
+										  </li>
+										  <li>
+										    <a href="#formAccount" data-toggle="tab">Account</a>
+										  </li>
+										  <li>
+										    <a href="#formCompany" data-toggle="tab">Company</a>
+										  </li>
+										  <li>
+										    <a href="#formGuest" data-toggle="tab">Guest</a>
+										  </li>
+										  <li>
+										    <a href="#formExtraItems" data-toggle="tab">Extra Items</a>
+										  </li>
+										</ul>
+									
+										<br>
+									
+										<div class="tab-content">
+										<!-- Start tab Customer -->
+											<div class="tab-pane active" id="formCustomer">
+												<div class="row-fluid">
+													<div class="span6">
+														<h3>Customer Detail</h3>
+														<input name="customerId" class="span4" type="text" placeholder="Customer ID">
+														<input name="identityId" class="span4" type="text" placeholder="Identity ID">
+														<input name="firstName" class="span4" type="text" placeholder="First Name">
+														<input name="lastName" class="span4" type="text" placeholder="Last Name">
+														<input name="email" class="span4" type="text" placeholder="E-mail">
+														<input name="phone" class="span4" type="text" placeholder="Phone Number">
+													</div>
+													<div class="span6">
+														<h3>Address</h3>
+														<input name="streetAddress" class="span4" type="text" placeholder="Street Address">
+														<select name="kelurahan" class="span4">
+														  <option>Kelurahan</option>
+														  <option>Sungai Beringin</option>
+														  <option>Tembilahan Hilir</option>
+														  <option>Pekan Arba</option>
+														  <option>Seberang Tembilahan</option>
+														  <option>Sungai Perak</option>
+														  <option>Tembilahan Kota</option>
+														</select>
+
+														<select name="city" class="span4">
+														  <option>City/District</option>
+														  <option>Kampar</option>
+														  <option>Indragiri Hulu</option>
+														  <option>Bengkalis</option>
+														  <option>Indragiri Hilir</option>
+														  <option>Pelalawan</option>
+														  <option>Rokan Hulu</option>
+														  <option>Rokan Hilir</option>
+														  <option>Siak</option>
+														  <option>Kuantan Singingi</option>
+														  <option>Kepulauan Meranti</option>
+														  <option>Kota Pekanbaru</option>
+														  <option>Kota Dumai</option>
+														</select>
+
+														<select name="province" class="span4">
+														  <option>Province</option>
+														  <option>Nanggro Aceh Darussalam</option>
+														  <option>Sumatera Utara</option>
+														  <option>Sumatra Barat</option>
+														  <option>Riau</option>
+														</select>
+
+														<select name="country" class="span4">
+														  <option>Country</option>
+														  <option>Indonesia</option>
+														  <option>Singapore</option>
+														  <option>Thailand</option>
+														  <option>Malaysia</option>
+														</select>
+
+														<br>
+														<button class="btn btn-default btn-primary"><a href="#"><i class="icon-plus" style="margin-right:5px; color:#000;"></i><span id="add-customer" style="color:#000;">Add Customer</span> </a> </button>
+													</div>
+												</div> <!-- End row-fluid -->
+												<div class="form-actions">
+													<form>
+													  <fieldset>
+													    <h3>Customer List</h3>
+													  </fieldset>
+													</form>
+													
+													<table class="table" id="table-style">
+											            <thead>
+											                <tr>
+												                <th>Customer ID</th>
+												                <th>Identity ID</th>
+												                <th>First Name</th>
+												                <th>Last Name</th>
+												                <th>E-mail</th>
+												                <th>Phone</th>
+												                <th>Street</th>
+												                <th>Kelurahan</th>
+												                <th>City/District</th>
+												                <th>Province</th>
+												                <th>Country</th>
+												                <th>Action</th>
+											                </tr>
+											            </thead>
+										                <tbody>
+											                <tr>
+											                    <td>AB12JJD</td>
+											                    <td>140403879903</td>
+											                    <td>Mark</td>
+											                    <td>Martin</td>
+											                    <td>martin@gmail.com</td>
+											                    <td>+1 9876 000</td>
+											                    <td>St. Andrews</td>
+											                    <td>Sungai Beringin</td>
+											                    <td>Indragiri Hilir</td>
+											                    <td>Riau</td>
+											                    <td>Indonesia</td>
+											                    <td>
+											                  		<div class="controls">
+																		<!-- Button to trigger modal -->
+											                            <a href="#myModalCustomer" role="button" class="btn btn-small btn-success" style="margin-left:5px; margin-bottom:5px;" data-toggle="modal"><i class="icon-ok" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Update</span></a>
+											                             
+											                            <!-- Modal -->
+											                            <div id="myModalCustomer" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											                                <div class="modal-header">
+												                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+												                                <h3 id="myModalLabel2">Update Customer</h3>
+											                                </div>
+											                                <div class="modal-body">
+											                                <!-- Start modal update -->
+																				<h3>Customer Detail</h3>
+																				<!-- Start modals -->
+																				<input name="customerId" class="span3" type="text" placeholder="Customer ID">
+																				<input name="identityId" class="span3" type="text" placeholder="Identity ID">
+																				<input name="firstName" class="span3" type="text" placeholder="First Name">
+																				<input name="lastName" class="span3" type="text" placeholder="Last Name">
+																				<input name="email" class="span3" type="text" placeholder="E-mail">
+																				<input name="phone" class="span3" type="text" placeholder="Phone Number">
+																			
+																				<h3>Address</h3>
+																				<input name="streetAddress" class="span3" type="text" placeholder="Street Address">
+																				<br>
+
+																				<select name="kelurahan" class="span3">
+																				  <option>Kelurahan</option>
+																				  <option>Sungai Beringin</option>
+																				  <option>Tembilahan Hilir</option>
+																				  <option>Pekan Arba</option>
+																				  <option>Seberang Tembilahan</option>
+																				  <option>Sungai Perak</option>
+																				  <option>Tembilahan Kota</option>
+																				</select>
+
+																				<select name="city" class="span3">
+																				  <option>City/District</option>
+																				  <option>Kampar</option>
+																				  <option>Indragiri Hulu</option>
+																				  <option>Bengkalis</option>
+																				  <option>Indragiri Hilir</option>
+																				  <option>Pelalawan</option>
+																				  <option>Rokan Hulu</option>
+																				  <option>Rokan Hilir</option>
+																				  <option>Siak</option>
+																				  <option>Kuantan Singingi</option>
+																				  <option>Kepulauan Meranti</option>
+																				  <option>Kota Pekanbaru</option>
+																				  <option>Kota Dumai</option>
+																				</select>
+
+																				<select name="province" class="span3">
+																				  <option>Province</option>
+																				  <option>Nanggro Aceh Darussalam</option>
+																				  <option>Sumatera Utara</option>
+																				  <option>Sumatra Barat</option>
+																				  <option>Riau</option>
+																				</select>
+
+																				<select name="country" class="span3">
+																				  <option>Country</option>
+																				  <option>Indonesia</option>
+																				  <option>Singapore</option>
+																				  <option>Thailand</option>
+																				  <option>Malaysia</option>
+																				</select>
+											                                <!-- End modal update -->
+											                                </div>
+
+											                                <div class="modal-footer">
+											                                	<button class="btn btn-primary btn-success">Update</button>
+											                                </div>
+											                            </div>
+																	</div> <!-- /controls -->
+																	<!-- End modals -->
+
+
+																	<button class="btn btn-small btn-inverse" style="margin-left:5px;" type="submit"><i class="icon-remove" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Delete</span></button>
+											                  </td>
+											                </tr>
+											            	<tr>
+											                    <td>AB12JJD</td>
+											                    <td>140403879903</td>
+											                    <td>Mark</td>
+											                    <td>Martin</td>
+											                    <td>martin@gmail.com</td>
+											                    <td>+1 9876 000</td>
+											                    <td>St. Andrews</td>
+											                    <td>Sungai Beringin</td>
+											                    <td>Indragiri Hilir</td>
+											                    <td>Riau</td>
+											                    <td>Indonesia</td>
+											                    <td>
+											                  		<div class="controls">
+																		 <!-- Button to trigger modal -->
+											                            <a href="#myModal7" role="button" class="btn btn-small btn-success" style="margin-left:5px; margin-bottom:5px;" data-toggle="modal"><i class="icon-ok" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Update</span></a>
+											                             
+											                            <!-- Modal -->
+											                            <div id="myModal7" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+											                                <div class="modal-header">
+											                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											                                  <h3 id="myModalLabel2">Update Customer</h3>
+											                                </div>
+											                                <div class="modal-body">
+											                                <!-- Start modal update -->
+																				<h3>Customer Detail</h3>
+																				<!-- Start modals -->
+																				<input name="customerId" class="span3" type="text" placeholder="Customer ID">
+																				<input name="identityId" class="span3" type="text" placeholder="Identity ID">
+																				<input name="firstName" class="span3" type="text" placeholder="First Name">
+																				<input name="lastName" class="span3" type="text" placeholder="Last Name">
+																				<input name="email" class="span3" type="text" placeholder="E-mail">
+																				<input name="phone" class="span3" type="text" placeholder="Phone Number">
+																			
+																				<h3>Address</h3>
+																				<input name="streetAddress" class="span3" type="text" placeholder="Street Address">
+																				<br>
+
+																				<select name="kelurahan" class="span3">
+																				  <option>Kelurahan</option>
+																				  <option>Sungai Beringin</option>
+																				  <option>Tembilahan Hilir</option>
+																				  <option>Pekan Arba</option>
+																				  <option>Seberang Tembilahan</option>
+																				  <option>Sungai Perak</option>
+																				  <option>Tembilahan Kota</option>
+																				</select>
+
+																				<select name="city" class="span3">
+																				  <option>City/District</option>
+																				  <option>Kampar</option>
+																				  <option>Indragiri Hulu</option>
+																				  <option>Bengkalis</option>
+																				  <option>Indragiri Hilir</option>
+																				  <option>Pelalawan</option>
+																				  <option>Rokan Hulu</option>
+																				  <option>Rokan Hilir</option>
+																				  <option>Siak</option>
+																				  <option>Kuantan Singingi</option>
+																				  <option>Kepulauan Meranti</option>
+																				  <option>Kota Pekanbaru</option>
+																				  <option>Kota Dumai</option>
+																				</select>
+
+																				<select name="province" class="span3">
+																				  <option>Province</option>
+																				  <option>Nanggro Aceh Darussalam</option>
+																				  <option>Sumatera Utara</option>
+																				  <option>Sumatra Barat</option>
+																				  <option>Riau</option>
+																				</select>
+
+																				<select name="country" class="span3">
+																				  <option>Country</option>
+																				  <option>Indonesia</option>
+																				  <option>Singapore</option>
+																				  <option>Thailand</option>
+																				  <option>Malaysia</option>
+																				</select>
+											                                <!-- End modal update -->
+											                                </div>
+											                                <div class="modal-footer">
+											                                  <button class="btn btn-primary btn-success">Update</button>
+											                                </div>
+											                            </div>
+																	</div> <!-- /controls -->
+																	<!-- End modals -->
+
+																	<button class="btn btn-small btn-inverse" style="margin-left:5px;" type="submit"><i class="icon-remove" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Delete</span></button>
+											                    </td>
+											                </tr>
+										                </tbody>
+											        </table>
+											            <form class="form-search">
+															<button type="submit" class="btn btn-small btn-primary pull-left" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">Search</button>
+															<input type="text" class="input-medium search-query pull-left" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px;">
+
+														  	<div class="btn-group pull-right">
+																<button class="btn"><i class="icon-chevron-left" style="color: #000;"></i></button>
+																<button class="btn">1</button>
+																<button class="btn">2</button>
+																<button class="btn">3</button>
+																<button class="btn">4</button>
+																<button class="btn">5</button>
+																<button class="btn"><i class="icon-chevron-right" style="color: #000;"></i></button>
+															</div>
+														</form>
+											    </div><!-- End form-action -->
+												<!-- End table customer -->
+										    </div><!-- End formCustomer -->
+										    <!-- End Tab Customer -->
+											
+										    <!-- Start tab Room -->
+											<div class="tab-pane" id="formRoom">
+												<div class="row-fluid">
+													<!-- Start shortcut -->
+						                            <div class="shortcuts">
+						                                <a href="#" class="shortcut"><i class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">Room Type</span>
+						                                </a>
+						                                <a href="#" class="shortcut"><i class="shortcut-icon icon-bookmark-empty"></i><span
+						                                class="shortcut-label">Room</span>
+						                            	</a>
+						                            </div><!-- /shortcuts --> 
+						                            <div class="form-actions">
+						                            	<h3> Room Type </h3>
+						                            	<div class="form-inline">
+														  	<input class="input-medium" type="text" placeholder="Type ID">
+															<select class="span2">
+															  <option>Type</option>
+															  <option>Apartment</option>
+															  <option>Guest House</option>
+															  <option>Deluxe</option>
+															  <option>Exclusive</option>
+															</select>
+															<select class="span2">
+															  <option>Max Adult</option>
+															  <option>1</option>
+															  <option>2</option>
+															  <option>3</option>
+															  <option>4</option>
+															</select>
+															<select class="span2">
+															  <option>Max Child</option>
+															  <option>1</option>
+															  <option>2</option>
+															  <option>3</option>
+															  <option>4</option>
+															  <option>5</option>
+															</select>
+														  	<input class="input-medium" type="text" placeholder="Default Price">
+															<button class="btn btn-small btn-inverse pull-right" style="margin-left:5px;" type="submit">
+															<i class="icon-plus" style="margin-right:5px; color: #fff;"></i>
+															<span class="save" style="color:#fff;">Add Room Type</span>
+															</button>
+														</div>
+														<hr>
+														<!-- Start table room type -->
+														<table class="table">
+												            <thead>
+												                <tr>
+												                    <th>Type ID</th>
+												                    <th>Type</th>
+												                    <th>Max Adult</th>
+												                    <th>Max Child</th>
+												                    <th>Default Price</th>
+												                    <th>Action</th>
+												                </tr>
+												            </thead>
+											                <tbody>
+												                <tr>
+												                    <td>DEL12TH</td>
+												                    <td>Deluxe</td>
+												                    <td>2</td>
+												                    <td>2</td>
+												                    <td>Rp.230.000</td>
+												                    <td>
+												                  		<div class="controls">
+																			 <!-- Button to trigger modal -->
+												                            <a href="#myModalAccount" role="button" class="btn btn-small btn-success" style="margin-left:5px; margin-bottom:5px;" data-toggle="modal"><i class="icon-ok" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Update</span></a>
+												                             
+												                            <!-- Modal -->
+												                            <div id="myModalAccount" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+												                                <div class="modal-header">
+												                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+												                                  <h3 id="myModalLabel2">Update Room Type</h3>
+												                                </div>
+												                                <div class="modal-body">
+												                                	<!-- Start modal update -->
+																					<h3>Room Type Detail</h3>
+																					<!-- Start modals -->
+																					<input class="input-medium" type="text" placeholder="Type ID">
+																					<select class="span2">
+																					  <option>Type</option>
+																					  <option>Apartment</option>
+																					  <option>Guest House</option>
+																					  <option>Deluxe</option>
+																					  <option>Exclusive</option>
+																					</select>
+																					<select class="span2">
+																					  <option>Max Adult</option>
+																					  <option>1</option>
+																					  <option>2</option>
+																					  <option>3</option>
+																					  <option>4</option>
+																					</select>
+																					<select class="span2">
+																					  <option>Max Child</option>
+																					  <option>1</option>
+																					  <option>2</option>
+																					  <option>3</option>
+																					  <option>4</option>
+																					  <option>5</option>
+																					</select>
+																				  	<input class="input-medium" type="text" placeholder="Default Price">
+												                                	<!-- End modal update -->
+												                                </div>
+												                                <div class="modal-footer">
+												                                  <button class="btn btn-primary btn-success">Update</button>
+												                                </div>
+												                            </div>
+																		</div> <!-- /controls -->
+																		<!-- End modals -->
+																		<button class="btn btn-small btn-inverse" style="margin-left:5px;" type="submit"><i class="icon-remove" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Delete</span></button>
+												                    </td>
+												                </tr>
+												            </tbody>
+												        </table>
+														<!-- End table room type -->
+						                            </div><!-- End form-action room type -->
+						                            <div class="form-actions">
+						                            	<h3> Room </h3>
+						                            	<div class="form-inline">
+														  	<input class="input-medium" type="text" placeholder="Room ID">
+														  	<select class="span2">
+															  <option>Type</option>
+															  <option>Apartment</option>
+															  <option>Guest House</option>
+															  <option>Deluxe</option>
+															  <option>Exclusive</option>
+															</select>
+														  	<input class="input-medium" type="text" placeholder="Special ID">
+															<select class="span2">
+															  <option>Room Number</option>
+															  <option>A1</option>
+															  <option>B2</option>
+															  <option>C3</option>
+															  <option>D4</option>
+															</select>
+															<select class="span2">
+															  <option>Status</option>
+															  <option>Available</option>
+															  <option>Check In</option>
+															  <option>Check Out</option>
+															  <option>Dirty</option>
+															  <option>Clean Up</option>
+															  <option>Renovation</option>
+															</select>
+															<button class="btn btn-small btn-inverse pull-right" style="margin-left:5px;" type="submit">
+															<i class="icon-plus" style="margin-right:5px; color: #fff;"></i>
+															<span class="save" style="color:#fff;">Add Room</span>
+															</button>
+														</div>
+														<hr>
+														<!-- Start table room -->
+														<table class="table">
+												            <thead>
+												                <tr>
+												                    <th>Room ID</th>
+												                    <th>Type ID</th>
+												                    <th>Special ID</th>
+												                    <th>Room Number</th>
+												                    <th>Status</th>
+												                    <th>Action</th>
+												                </tr>
+												            </thead>
+											                <tbody>
+												                <tr>
+												                    <td>123381822</td>
+												                    <td>Deluxe</td>
+												                    <td>1234788</td>
+												                    <td>D4</td>
+												                    <td>Available</td>
+												                    <td>
+												                  		<div class="controls">
+																			 <!-- Button to trigger modal -->
+												                            <a href="#myModalRoom" role="button" class="btn btn-small btn-success" style="margin-left:5px; margin-bottom:5px;" data-toggle="modal"><i class="icon-ok" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Update</span></a>
+												                             
+												                            <!-- Modal -->
+												                            <div id="myModalRoom" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+												                                <div class="modal-header">
+												                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+												                                  <h3 id="myModalLabel2">Update Room</h3>
+												                                </div>
+												                                <div class="modal-body">
+												                                	<!-- Start modal update -->
+																					<h3>Room Detail</h3>
+																					<!-- Start modals -->
+																					<input class="input-medium" type="text" placeholder="Room ID">
+																				  	<input class="input-medium" type="text" placeholder="Type ID">
+																				  	<input class="input-medium" type="text" placeholder="Special ID">
+																					<select class="span2">
+																					  <option>Room Number</option>
+																					  <option>A1</option>
+																					  <option>B2</option>
+																					  <option>C3</option>
+																					  <option>D4</option>
+																					</select>
+																					<select class="span2">
+																					  <option>Status</option>
+																					  <option>Available</option>
+																					  <option>Check In</option>
+																					  <option>Check Out</option>
+																					  <option>Dirty</option>
+																					  <option>Clean Up</option>
+																					  <option>Renovation</option>
+																					</select>
+												                                	<!-- End modal update -->
+												                                </div>
+												                                <div class="modal-footer">
+												                                  <button class="btn btn-primary btn-success">Update</button>
+												                                </div>
+												                            </div>
+																		</div> <!-- /controls -->
+																		<!-- End modals -->
+																		<button class="btn btn-small btn-inverse" style="margin-left:5px;" type="submit"><i class="icon-remove" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Delete</span></button>
+												                    </td>
+												                </tr>
+												            </tbody>
+												        </table>
+														<!-- End table room -->
+						                            </div><!-- End form-action room -->
+												</div>
+											</div>
+										    <!-- End Tab Room -->
+
+										    <!-- Start tab Account -->
+											<div class="tab-pane" id="formAccount">
+												<div class="row-fluid">
+													<div class="span6">
+														<h3>Account Detail</h3>
+														<input name="username" class="span4" type="text" placeholder="Username">
+														<input name="password" class="span4" type="text" placeholder="Password">
+														<select name="level" class="span4">
+														  <option>Level</option>
+														  <option>1</option>
+														  <option>2</option>
+														  <option>3</option>
+														  <option>4</option>
+														</select>
+														<br>
+														<button class="btn btn-default btn-primary"><a href="#"><i class="icon-plus" style="margin-right:5px; color:#000;"></i><span id="add-customer" style="color:#000;">Add Account</span> </a> </button>
+													</div>
+												</div>
+												<div class="form-actions">
+													<form>
+													  <fieldset>
+													    <h3>Account List</h3>
+													  </fieldset>
+													</form>
+													
+													<table class="table">
+											            <thead>
+											                <tr>
+											                    <th>Username</th>
+											                    <th>Password</th>
+											                    <th>Level</th>
+											                    <th>Action</th>
+											                </tr>
+											            </thead>
+										                <tbody>
+											                <tr>
+											                    <td>test!234</td>
+											                    <td>lovinsc12</td>
+											                    <td>1</td>
+											                    <td>
+											                  		<div class="controls">
+																		 <!-- Button to trigger modal -->
+											                            <a href="#myModalAccount" role="button" class="btn btn-small btn-success" style="margin-left:5px; margin-bottom:5px;" data-toggle="modal"><i class="icon-ok" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Update</span></a>
+											                             
+											                            <!-- Modal -->
+											                            <div id="myModalAccount" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											                                <div class="modal-header">
+											                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											                                  <h3 id="myModalLabel2">Update Account</h3>
+											                                </div>
+											                                <div class="modal-body">
+											                                	<!-- Start modal update -->
+																				<h3>Account Detail</h3>
+																				<!-- Start modals -->
+																				<input name="username" class="span4" type="text" placeholder="Username">
+																				<input name="password" class="span4" type="text" placeholder="Password">
+																				<select name="level" class="span4">
+																				  <option>Level</option>
+																				  <option>1</option>
+																				  <option>2</option>
+																				  <option>3</option>
+																				  <option>4</option>
+																				</select>
+											                                	<!-- End modal update -->
+											                                </div>
+											                                <div class="modal-footer">
+											                                  <button class="btn btn-primary btn-success">Update</button>
+											                                </div>
+											                            </div>
+																	</div> <!-- /controls -->
+																	<!-- End modals -->
+																	<button class="btn btn-small btn-inverse" style="margin-left:5px;" type="submit"><i class="icon-remove" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Delete</span></button>
+											                    </td>
+											                </tr>
+											            </tbody>
+											        </table> <!-- End table account -->
+
+										            <form class="form-search">
+													    <button type="submit" class="btn btn-small btn-primary pull-left" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">Search</button>
+													    <input type="text" class="input-medium search-query pull-left" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px;">
+
+													    <div class="btn-group pull-right">
+														    <button class="btn"><i class="icon-chevron-left" style="color: #000;"></i></button>
+														    <button class="btn">1</button>
+														    <button class="btn">2</button>
+														    <button class="btn">3</button>
+														    <button class="btn">4</button>
+														    <button class="btn">5</button>
+														    <button class="btn"><i class="icon-chevron-right" style="color: #000;"></i></button>
+														</div>
+													</form>
+											    </div><!-- End form-action -->
+										    </div><!-- End Tab Account -->
+
+										    <!-- Start tab Company -->
+											<div class="tab-pane" id="formCompany">
+												<div class="form-actions">
+													<div class="row-fluid">
+														<div class="span6">
+															<label>Company Name</label>
+															<input name="companyName" class="span4" type="text" placeholder="Name">
+														</div>
+														<div class="span6">
+															<label>Address</label>
+															<textarea rows="5"></textarea>
+														</div>
+														<div class="span6">
+															<label>City</label>
+															<input name="companyCity" class="span4" type="text" placeholder="Name">
+														</div>
+														<div class="span6">
+															<label>Province</label>
+															<input name="companyProvince" class="span4" type="text" placeholder="Name">
+														</div>
+														<div class="span6">
+															<label>Phone</label>
+															<input name="companyPhone" class="span4" type="text" placeholder="Name">
+														</div>
+														<div class="span6">
+															<label>Fax</label>
+															<input name="companyFax" class="span4" type="text" placeholder="Name">
+														</div>
+														<div class="span6">
+															<label>Email</label>
+															<input name="companyMail" class="span4" type="text" placeholder="Name">
+														</div>
+														<div class="span6">
+															<label>Web</label>
+															<input name="companyWeb" class="span4" type="text" placeholder="Name">
+														</div>
+													</div>
+
+													<div class="row-fluid">
+														<br>
+														<div class="span8">
+													        <div id="upload-image-form" action="" method="post" enctype="multipart/form-data">
+													          <div id="image-preview-div" style="display: none">
+													            <label for="exampleInputFile">Selected Logo:</label>
+													            <br>
+													            <img id="preview-img" src="noimage">
+													          </div>
+													          <div class="form-group">
+													            <input type="file" name="file" id="file" required>
+													          </div>
+													          <button class="btn btn-lg btn-primary" id="upload-button" type="submit">Upload Logo</button>
+													        </div>
+													        <br>
+
+															<button class="btn btn-small btn-success pull-left"><a href="#"><i class="icon-plus" style="margin-right:5px; color:#fff;"></i><span id="add-customer" style="color:#fff;">Update Company Profile</span> </a>
+															</button>
+														</div>
+													</div>
+													</div>
+											    </div><!-- End form-action -->
+										    </div><!-- End Tab Company -->
+
+										    <!-- Start tab Guest -->
+											<div class="tab-pane" id="formGuest">
+												<div class="row-fluid">
+													<div class="span6">
+														<h3>Guest Detail</h3>
+														<input name="guestName" class="span4" type="text" placeholder="Name">
+														<input name="guestAddress" class="span4" type="text" placeholder="Address">
+														<input name="guestPhone" class="span4" type="text" placeholder="Phone">
+														<input name="guestEmail" class="span4" type="text" placeholder="E-mail">
+														<br>
+														<button class="btn btn-default btn-primary"><a href="#"><i class="icon-plus" style="margin-right:5px; color:#000;"></i><span id="add-customer" style="color:#000;">Add Guest</span> </a>
+														</button>
+													</div>
+												</div>
+												<div class="form-actions">
+													<form>
+													  <fieldset>
+													    <h3>Guest List</h3>
+													  </fieldset>
+													</form>
+													
+													<table class="table">
+											            <thead>
+											                <tr>
+											                    <th>Name</th>
+											                    <th>Address</th>
+											                    <th>Phone</th>
+											                    <th>E-mail</th>
+											                    <th>Action</th>
+											                </tr>
+											            </thead>
+										                <tbody>
+											                <tr>
+											                    <td>Mark</td>
+											                    <td>Jl. Sungai Beringin</td>
+											                    <td>+62-345-4677-9087</td>
+											                    <td>mark@gmail.com</td>
+											                    <td>
+											                  		<div class="controls">
+																		 <!-- Button to trigger modal -->
+											                            <a href="#myModalGuest" role="button" class="btn btn-small btn-success" style="margin-left:5px; margin-bottom:5px;" data-toggle="modal"><i class="icon-ok" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Update</span></a>
+											                             
+											                            <!-- Modal -->
+											                            <div id="myModalGuest" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											                                <div class="modal-header">
+											                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											                                  <h3 id="myModalLabel2">Update Guest</h3>
+											                                </div>
+											                                <div class="modal-body">
+											                                	<!-- Start modal update -->
+																				<h3>Guest Detail</h3>
+																				<!-- Start modals -->
+																				<input name="guestName" class="span4" type="text" placeholder="Name">
+																				<input name="guestAddress" class="span4" type="text" placeholder="Address">
+																				<input name="guestPhone" class="span4" type="text" placeholder="Phone">
+																				<input name="guestEmail" class="span4" type="text" placeholder="E-mail">
+											                                	<!-- End modal update -->
+											                                </div>
+											                                <div class="modal-footer">
+											                                  <button class="btn btn-primary btn-success">Update</button>
+											                                </div>
+											                            </div>
+																	</div> <!-- /controls -->
+																	<!-- End modals -->
+																	<button class="btn btn-small btn-inverse" style="margin-left:5px;" type="submit"><i class="icon-remove" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Delete</span></button>
+											                    </td>
+											                </tr>
+											            </tbody>
+											        </table> <!-- End table Guest -->
+
+										            <form class="form-search">
+													    <button type="submit" class="btn btn-small btn-primary pull-left" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">Search</button>
+													    <input type="text" class="input-medium search-query pull-left" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px;">
+
+													    <div class="btn-group pull-right">
+														    <button class="btn"><i class="icon-chevron-left" style="color: #000;"></i></button>
+														    <button class="btn">1</button>
+														    <button class="btn">2</button>
+														    <button class="btn">3</button>
+														    <button class="btn">4</button>
+														    <button class="btn">5</button>
+														    <button class="btn"><i class="icon-chevron-right" style="color: #000;"></i></button>
+														</div>
+													</form>
+											    </div><!-- End form-action -->
+										    </div><!-- End Tab Guest -->
+
+										    <!-- Start tab Extra Items -->
+											<div class="tab-pane" id="formExtraItems">
+												<div class="form-actions">
+													<div class="row-fluid">
+														<h3>Item Detail</h3>
+														<div class="span2">
+															<label>Items</label>
+															<select name="items" class="span2">
+															  <option>Item</option>
+															  <option>Towel</option>
+															  <option>Fried Rice</option>
+															  <option>Soap</option>
+															  <option>Fried Chicken</option>
+															</select>
+														</div>
+														<div class="span2">
+															<label>Type</label>
+															<select name="type" class="span2">
+															  <option>Type</option>
+															  <option>Property</option>
+															  <option>Food & Beverages</option>
+															  <option>Claim Service</option>
+															</select>
+														</div>
+														<div class="span2">
+															<label>Summary</label>
+															<select name="summary" class="span2">
+															  <option>Summary</option>
+															  <option>1</option>
+															  <option>2</option>
+															  <option>3</option>
+															  <option>4</option>
+															  <option>5</option>
+															  <option>6</option>
+															</select>
+														</div>
+														<div class="span2">
+															<label>Distributor</label>
+															<input name="distributor" class="span2" type="text" placeholder="Distributor">
+														</div>
+													</div>
+													<button class="btn btn-default btn-primary pull-right"><a href="#"><i class="icon-plus" style="margin-right:5px; color:#000;"></i><span id="add-customer" style="color:#000;">Add Extra Item</span> </a>
+													</button>
+												</div>
+												<div class="form-actions">
+													<div>
+													    <h3>Extra Item List</h3>
+													</div>
+													<table class="table">
+											            <thead>
+											                <tr>
+											                    <th>Items</th>
+											                    <th>Type</th>
+											                    <th>Summary</th>
+											                    <th>Distributor</th>
+											                </tr>
+											            </thead>
+										                <tbody>
+											                <tr>
+											                    <td>Fried Rice</td>
+											                    <td>Food & Beverages</td>
+											                    <td>200 pcs</td>
+											                    <td>Suka Damai Restaurant</td>
+											                    <td>
+											                  		<div class="controls">
+																		 <!-- Button to trigger modal -->
+											                            <a href="#myModalExtraItems" role="button" class="btn btn-small btn-success" style="margin-left:5px; margin-bottom:5px;" data-toggle="modal"><i class="icon-ok" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Update</span></a>
+											                             
+											                            <!-- Modal -->
+											                            <div id="myModalExtraItems" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											                                <div class="modal-header">
+											                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											                                  <h3 id="myModalLabel2">Update Extra Items</h3>
+											                                </div>
+											                                <div class="modal-body">
+											                                	<!-- Start modal update -->
+																					<label>Items</label>
+																					<select name="items" class="span4">
+																					  <option>Item</option>
+																					  <option>Towel</option>
+																					  <option>Fried Rice</option>
+																					  <option>Soap</option>
+																					  <option>Fried Chicken</option>
+																					</select>
+																					<br>
+																					<label>Type</label>
+																					<select name="type" class="span4">
+																					  <option>Type</option>
+																					  <option>Property</option>
+																					  <option>Food & Beverages</option>
+																					  <option>Claim Service</option>
+																					</select>
+																					<br>
+																					<label>Summary</label>
+																					<select name="summary" class="span4">
+																					  <option>Summary</option>
+																					  <option>1</option>
+																					  <option>2</option>
+																					  <option>3</option>
+																					  <option>4</option>
+																					  <option>5</option>
+																					  <option>6</option>
+																					</select>
+																					<br>
+																					<label>Distributor</label>
+																					<input name="distributor" class="span4" type="text" placeholder="Distributor">
+											                                	<!-- End modal update -->
+											                                </div>
+											                                <div class="modal-footer">
+											                                  <button class="btn btn-primary btn-success">Update</button>
+											                                </div>
+											                            </div>
+																	</div> <!-- /controls -->
+																	<!-- End modals -->
+																	<button class="btn btn-small btn-inverse" style="margin-left:5px;" type="submit"><i class="icon-remove" style="margin-right:5px; color: #fff;"></i><span class="save" style="color:#fff;">Delete</span></button>
+											                    </td>
+											                </tr>
+											            </tbody>
+											        </table> <!-- End table Extra Items -->
+
+										            <form class="form-search">
+													    <button type="submit" class="btn btn-small btn-primary pull-left" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">Search</button>
+													    <input type="text" class="input-medium search-query pull-left" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px;">
+
+													    <div class="btn-group pull-right">
+														    <button class="btn"><i class="icon-chevron-left" style="color: #000;"></i></button>
+														    <button class="btn">1</button>
+														    <button class="btn">2</button>
+														    <button class="btn">3</button>
+														    <button class="btn">4</button>
+														    <button class="btn">5</button>
+														    <button class="btn"><i class="icon-chevron-right" style="color: #000;"></i></button>
+														</div>
+													</form>
+											    </div><!-- End form-action -->
+										    </div><!-- End Tab Extra Items -->
+
+										</div><!-- End tab-content -->						  
+									</div><!-- End  tabbable-->
+								</div><!-- End span12 -->
+							</div><!-- End row-fluid -->
+						</div><!-- /widget-content -->	 	
+					</div> <!-- /widget -->
+			    </div> <!-- /span12 -->	
+		    </div> <!-- /row -->
+		</div> <!-- /container -->  
+	</div> <!-- /main-inner -->
+</div> <!-- /main -->
+   
+<div class="extra">
+    <div class="extra-inner">
+	    <div class="container">
+	        <div class="row">
+                <div class="span3">
+                    <a class="brand" href="index.html"><img src="img/Footer/logofullmaincolor.png" class="img-circle" style="width: 110px; height:53px; margin-bottom:15px;">
+                    </a>
+                    <ul>
+                        <li><a href="javascript:;">Address : Abdul Manaf, St.. , Tembilahan </a></li>
+                        <li><a href="javascript:;">Email : elitehotels@outlook.com</a></li>
+                        <li><a href="javascript:;">Phone : +62-813-0986-3462</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+                <div class="span3">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                        <li><a href="javascript:;">Ask a Question</a></li>
+                        <li><a href="javascript:;">Video Tutorial</a></li>
+                        <li><a href="javascript:;">Feedback</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+                <div class="span3">
+                    <h3>Something Legal</h3>
+                    <ul>
+                        <li><a href="javascript:;">Read License</a></li>
+                        <li><a href="javascript:;">Terms of Use</a></li>
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+                <div class="span3">
+                    <h3>Our Service</h3>
+                    <ul>
+                        <li><a href="">Meeting Room</a></li>
+                        <li><a href="">Guest House</a></li>
+                        <li><a href="">Restaurant</a></li>
+                        <li><a href="">Laundry</a></li>
+                        <li><a href="">Technology Support</a></li>
+                        <li><a href="">Internet Access</a></li>
+                    </ul>
+                </div>
+                <!-- /span3 -->
+            </div>
+	        <!-- /row --> 
+	    </div>
+        <!-- /container --> 
+    </div>
+    <!-- /extra-inner --> 
+</div>
+<!-- /extra -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <center>
+            <a href="index.html">&copy;Elite Hotels Management</a>
+          </center>
+        </div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+<!-- /footer --> 
+    
+
+
+<script src="js/jquery-1.7.2.min.js"></script>
+	
+<script src="js/bootstrap.js"></script>
+<script src="js/base.js"></script>
+<script src="tests/bootstrap-datepicker.js"></script>
+<script src='js/fullcalendar/lib/jquery.min.js'></script>
+<script src='js/fullcalendar/lib/moment.min.js'></script>
+<script src='js/fullcalendar/fullcalendar.js'></script>
+<script>
+	var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+ 
+var checkin = $('#dpd1').datepicker({
+  onRender: function(date) {
+    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > checkout.date.valueOf()) {
+    var newDate = new Date(ev.date)
+    newDate.setDate(newDate.getDate() + 1);
+    checkout.setValue(newDate);
+  }
+  checkin.hide();
+  $('#dpd2')[0].focus();
+}).data('datepicker');
+var checkout = $('#dpd2').datepicker({
+  onRender: function(date) {
+    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  checkout.hide();
+}).data('datepicker');
+</script>
+
+
+  </body>
+
+</html>
